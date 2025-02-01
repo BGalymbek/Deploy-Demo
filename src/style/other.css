@@ -1,0 +1,36 @@
+.whatsapp-logo{
+    position: fixed;
+    z-index: 4;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+.up{
+    background-color: cornflowerblue;
+    position: fixed;
+    z-index: 4;
+    bottom: 30px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+
+@media (max-width:576px){
+    .whatsapp-logo {
+        bottom: 20px;
+        right: 20px;
+        width: 38px;
+    }
+}

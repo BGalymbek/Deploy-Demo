@@ -1,0 +1,115 @@
+.nav{
+  font-weight: 500;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: rgba(240, 243, 250, 0.6);
+  backdrop-filter: blur(5px);
+  /* Дополнительные стили */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Тень */
+  width: 90%;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  transition: ease 0.5s;
+  z-index: 10;  
+}
+
+.nav-updated{
+  width: 60%;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: ease 0.5s;
+}
+
+.med-logo{
+  width: 65px;
+}
+
+.nav-list{
+  display: flex;
+  gap: 20px;
+}
+
+.call-list{
+  display: flex;
+  gap: 30px;
+  box-sizing: content-box;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes ring {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(9deg) scale(1.05)}
+  50% { transform: rotate(0); }
+  75% { transform: rotate(-9deg) scale(0.95)}
+  100% { transform: rotate(0); }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.phoneIcon{
+  font-size: 20px;
+  display: inline-block;
+  animation: ring 0.7s ease-in-out infinite;
+  color: cornflowerblue;
+}
+
+.taulik-boiu{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.green-dot{
+  font-size: 10px;
+  color: #32CD32;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+
+/* Media */
+
+@media (max-width:576px){
+  .nav-list{
+    display: none;
+  }
+
+  .call-list {
+    gap: 20px;
+  }
+
+  .taulik-boiu span{
+    display: none;
+  }
+  .taulik-boiu::after {
+    content: "24/7";
+    font-size: 15px;
+    /* display: inline; */
+  }
+  .nav {
+    padding: 15px 25px;
+  }
+
+  .nav-updated{
+    width: 70%;
+  }
+  .contact span{
+    display: none;
+  }
+}

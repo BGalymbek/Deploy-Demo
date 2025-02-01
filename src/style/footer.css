@@ -1,0 +1,70 @@
+footer{
+    background-color: rgba(240, 243, 250, 0.6);
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.15); /* Тень */
+    border-radius: 30px 30px 0 0;
+    padding: 35px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-corp{
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-logo img{
+    width: 80px;
+}
+
+.end-footer h3{
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.middle-footer ul, .end-footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.contact-footer li{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.icon-footer{
+    color: dodgerblue;
+}
+
+
+
+@media (max-width:576px){
+
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .end-footer h3 {
+        font-size: 14px;
+    }
+
+    .end-footer ul{
+        margin-top: 15px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .middle-footer {
+        display: none;
+    }
+}
