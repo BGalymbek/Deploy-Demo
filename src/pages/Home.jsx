@@ -3,9 +3,10 @@ import Navbar from '../components/Navbar'
 import Whatsapp from '../components/Whatsapp'
 import Footer from '../components/Footer'
 import Medical from '../assets/врачспациентом.webp'
+import ServiceWater from '../assets/Водянойбаланс.webp'
 import ServiceCateter from '../assets/катетер.webp'
 import ServiceVnutrivenny from '../assets/serviceCart-внутривенные.webp'
-import ServiceIntoksikasya from '../assets/интоксикация.webp'
+import ServiceIntoksikasya from '../assets/Интоксикация2.webp'
 import ServiceCart from '../assets/service-cart.webp'
 import ServiceCart2 from '../assets/service-cart2.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -53,14 +54,14 @@ export default function Home() {
               <section className='header'>
                   <div className='header-left'>
                     <div className='header-content'>
-                        <h2><span className='only-home'>Вызов врача <br/>на дому</span></h2>
+                        <h2><span className='call-text'><span className='only-home'>Вызов врача</span><br/>на дом</span> – забота о вашем здоровье!</h2>
                         <div className='mainService'>
                             <h4>У нас предоставляются следующие услуги</h4>
                             <div className='mainService-list'>
-                                <p>Снятие интоксикации</p>
-                                <p>Терапевт</p>
-                                <p>Педиатр</p>
-                                <p>Нарколог<br/>(с опытом 10лет)</p>
+                                <p>✅ Снятие интоксикации</p>
+                                <p>✅ Терапевт</p>
+                                <p>✅ Педиатр</p>
+                                <p>✅ Нарколог<br/>(с опытом 10лет)</p>
                             </div>
                         </div>
                     </div>
@@ -68,7 +69,7 @@ export default function Home() {
                         <a href="#services">Остальные услуги</a>
                         <a href="">
                             <FontAwesomeIcon className='phoneIcon-home' icon={faPhoneVolume}/>
-                            Позвонить врачу
+                            Вызвать прямо сейчас
                         </a>
                     </div>
                   </div>
@@ -78,7 +79,7 @@ export default function Home() {
               </section>
               <section className='services' id='services'>
                     <div className='services-title'> 
-                        <h1>Services part</h1>
+                        <h1>Услуги</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, porro dignissimos. Rerum harum facilis, alias iure fuga fugit magni. Nulla.</p>
                     </div>
                     <div className='services-content'>
@@ -106,8 +107,15 @@ export default function Home() {
                         <div className='service-cart'>
                             <img src={ServiceCart} alt="" />
                             <div className='serviceCart-content'>
-                                <h3>Cart text</h3>
+                                <h3>Перевязка</h3>
                                 <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div className='service-cart'>
+                            <img src={ServiceWater} alt="" />
+                            <div className='serviceCart-content'>
+                                <h3>Водно-солевой баланс</h3>
+                                <p>Воостановление водно-солевого баланса при обезвожтвании(диареи)</p>
                             </div>
                         </div>
                     </div>
@@ -115,7 +123,7 @@ export default function Home() {
               <section className='about-us'>
                     <div className='background-aboutUs'></div>
                     <div className='aboutUs-title'> 
-                        <h1>About Us part</h1>
+                        <h1>О нас</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, porro dignissimos. Rerum harum facilis, alias iure fuga fugit magni. Nulla.</p>
                     </div>
                     <div className='content-aboutUs'>
