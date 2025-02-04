@@ -1,7 +1,7 @@
 .wrapper{
 	width: 90%;
 	margin: 0 auto;
-	padding-top: 130px;
+	padding-top: 100px;
     overflow: visible;
 }
 
@@ -10,7 +10,7 @@
 .header{
     display: flex;
     justify-content: space-between;
-    height: 80vh;
+    height: 85vh;
     margin-bottom: 70px;
 }
 
@@ -34,7 +34,7 @@
 
 .header-content h2{
     line-height: 1.15em;
-    color: #125497;
+    color: #32CD32;
     /* font-weight: bold; */
 }
 
@@ -103,13 +103,13 @@
 }
 
 .only-home{
-    color: #15a715;
-    font-weight: bold;
+    color: cornflowerblue;
+    font-weight: 750;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .call-text{
-    color: #15a715;
+    color: cornflowerblue;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
@@ -504,6 +504,5 @@
         grid-template-columns: 1fr;
         gap: 25px;
         padding: 20px;
-        text-align: center;
     }
 }

@@ -120,7 +120,7 @@ export default function Home() {
                         </div>
                     </div>
               </section>
-              <section className='about-us'>
+              <section id='about-us' className='about-us'>
                     <div className='background-aboutUs'></div>
                     <div className='aboutUs-title'> 
                         <h1>О нас</h1>

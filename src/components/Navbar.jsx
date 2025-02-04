@@ -31,10 +31,10 @@ export default function Navbar() {
       </Link>
 
       <ul className='nav-list'>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Services</li>
-        <li>Doctor</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-us">О нас</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="">Doctor</a></li>
       </ul>
 
       <div>
