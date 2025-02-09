@@ -3,15 +3,13 @@ import Navbar from '../components/Navbar'
 import Whatsapp from '../components/Whatsapp'
 import Footer from '../components/Footer'
 import Medical from '../assets/врачспациентом.webp'
-import ServiceWater from '../assets/Водянойбаланс.webp'
-import ServiceCateter from '../assets/катетер.webp'
-import ServiceVnutrivenny from '../assets/serviceCart-внутривенные.webp'
-import ServiceIntoksikasya from '../assets/Интоксикация2.webp'
-import ServiceCart from '../assets/service-cart.webp'
-import ServiceCart2 from '../assets/service-cart2.webp'
+import ServiceBandaging from '../assets/bandaging.png'
+import ServiceIntoksikasya from '../assets/отравление.png'
+import ServiceCart from '../assets/капельница.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneVolume} from '@fortawesome/free-solid-svg-icons';
 import Up from '../components/Up'
+import Call from '../components/Call'
 
 export default function Home() {
   let questions = [
@@ -49,6 +47,7 @@ export default function Home() {
       <Navbar/>
       <Whatsapp/>
       <Up/>
+      <Call/>
       <div className='wrapper'>
           <main>
               <section className='header'>
@@ -67,14 +66,13 @@ export default function Home() {
                     </div>
                     <div className='header-buttons'>
                         <a href="#services">Остальные услуги</a>
-                        <a href="">
+                        <a href='tel:+77075634022'>
                             <FontAwesomeIcon className='phoneIcon-home' icon={faPhoneVolume}/>
                             Вызвать прямо сейчас
                         </a>
                     </div>
                   </div>
                   <div className='header-right'>
-
                   </div>
               </section>
               <section className='services' id='services'>
@@ -86,36 +84,93 @@ export default function Home() {
                         <div className='service-cart'>
                             <img src={ServiceIntoksikasya} alt="" />
                             <div className='serviceCart-content'>
-                                <h3>Снятие интоксикации</h3>
-                                <p>Снятие интоксикации при алкогольном отравлении</p>
-                            </div>
-                        </div>
-                        <div className='service-cart'>
-                            <img src={ServiceVnutrivenny} alt="" />
-                            <div className='serviceCart-content'>
-                                <h3>Уколы</h3>
-                                <p>Внутривенные/Внутримышечные уколы</p>
-                            </div>
-                        </div>
-                        <div className='service-cart'>
-                            <img src={ServiceCateter} alt="" />
-                            <div className='serviceCart-content'>
-                                <h3>Катетеры</h3>
-                                <p>Периферический/Мочевой катетер</p>
+                                <h3>Отравление пищевое, Отравление алкогольное, Кишечные отравления</h3>
+                                <p>Квалифицированная медсестра приедет в течений 60 минут с лекарствами и снимет интоксикацию организма.</p>
                             </div>
                         </div>
                         <div className='service-cart'>
                             <img src={ServiceCart} alt="" />
                             <div className='serviceCart-content'>
-                                <h3>Перевязка</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <h3>Капельница, уколы</h3>
+                                <p>Медсестра с опытом работы от 10 лет выполняет все виды уколов и капельниц на дому, быстро и безболезненно. Легкая рука работаем со сложными венами..</p>
                             </div>
                         </div>
                         <div className='service-cart'>
-                            <img src={ServiceWater} alt="" />
+                            <img src={ServiceBandaging} alt="" />
                             <div className='serviceCart-content'>
-                                <h3>Водно-солевой баланс</h3>
-                                <p>Воостановление водно-солевого баланса при обезвожтвании(диареи)</p>
+                                <h3>Перевязка</h3>
+                                <p>Различные медицинские услуги у вас дома наши опытные медсестра выполняют перевязку ран после операции и ушибов, промывание при отравлений и так далее.</p>
+                            </div>
+                        </div>
+                    </div>
+              </section>
+              <section className='price'>
+                    <div className='price-title'> 
+                        <h1>Цены на услуги</h1>
+                    </div>
+                    <div className='price-container'>
+                        <div className='price-left'>
+                            <div className='price-cart'>
+                                <div className='price-header'>
+                                    <h1>Снятие алкогольной интоксикации</h1>
+                                    <h3>от 25 000тг</h3>
+                                </div>
+                                <hr/>
+                                <div className='price-footer'>
+                                    <p>Цена может рассчитываться от степени отравления</p>
+                                </div>
+                            </div>
+                            <div className='price-cart'>
+                                <div className='price-header'>
+                                    <h1>Капельница на дому</h1>
+                                    <h3>от 4000 тг</h3>
+                                </div>
+                                <hr/>
+                                <div className='price-footer'>
+                                    <p>Цена рассчитываться индивидуально от количества препаратов</p>
+                                </div>
+                            </div>
+                            <div className='price-cart'>
+                                <div className='price-header'>
+                                    <h1>Снятие алкогольной интоксикации</h1>
+                                    <h3>от 25 000тг</h3>
+                                </div>
+                                <hr/>
+                                <div className='price-footer'>
+                                    <p>Цена может рассчитываться от степени отравления</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='price-right'>
+                        <div className='price-cart'>
+                                <div className='price-header'>
+                                    <h1>Инъекции внутривенные</h1>
+                                    <h3>от 5000тг</h3>
+                                </div>
+                                <hr/>
+                                <div className='price-footer'>
+                                    <p>Цена рассчитываться индивидуально от количества препаратов</p>
+                                </div>
+                            </div>
+                            <div className='price-cart'>
+                                <div className='price-header'>
+                                    <h1>Снятие алкогольной интоксикации</h1>
+                                    <h3>от 25 000тг</h3>
+                                </div>
+                                <hr/>
+                                <div className='price-footer'>
+                                    <p>Цена может рассчитываться от степени отравления</p>
+                                </div>
+                            </div>
+                            <div className='price-cart'>
+                                <div className='price-header'>
+                                    <h1>Снятие алкогольной интоксикации</h1>
+                                    <h3>от 25 000тг</h3>
+                                </div>
+                                <hr/>
+                                <div className='price-footer'>
+                                    <p>Цена может рассчитываться от степени отравления</p>
+                                </div>
                             </div>
                         </div>
                     </div>

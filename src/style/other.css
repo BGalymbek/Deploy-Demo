@@ -1,11 +1,10 @@
 .whatsapp-logo{
     position: fixed;
     z-index: 4;
-    bottom: 85px;
-    right: 35px;
-    width: 43px;
-    transition: opacity 1s ease;
-    opacity: 0;
+    bottom: 100px;
+    right: 42px;
+    width: 50px;
+    opacity: 1;
 }
 
 .up{
@@ -13,10 +12,10 @@
     background-color: cornflowerblue;
     position: fixed;
     z-index: 4;
-    bottom: 35px;
-    right: 35px;
-    width: 40px;
-    height: 40px;
+    bottom: 30px;
+    left: 35px;
+    width: 45px;
+    height: 45px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -28,7 +27,31 @@
     transition: background-color 0.6s ease;
 }
 
-.up:hover{
+.phone{
+    cursor: pointer;
+    background-color: rgba(255, 140, 0, 0.808);
+    position: fixed;
+    z-index: 4;
+    bottom: 30px;
+    right: 35px;
+    width: 57px;
+    height: 57px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    opacity: 1;
+    transition: background-color 0.6s ease;
+    font-size: 20px;
+}
+
+.phone-icon{
+    animation: ring 0.7s ease-in-out infinite;
+}
+
+.up:hover, .phone-up:hover{
     background-color: rgba(100, 148, 237, 0.85);
 }
 
@@ -44,5 +67,13 @@
         right: 25px;
         width: 36px;
         height: 36px;
+    }
+
+    .phone{
+        bottom: 20px;
+        right: 20px;
+        width: 47px;
+        height: 47px;
+        font-size:18px;
     }
 }
