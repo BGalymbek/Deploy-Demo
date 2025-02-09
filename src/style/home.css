@@ -335,6 +335,7 @@
     font-size: 20px;
     font-weight: bold;
     white-space: nowrap;
+    color: rgb(60, 95, 161);
 }
 
 .price-header{
