@@ -45,15 +45,20 @@ footer{
     color: dodgerblue;
 }
 
-
-
-@media (max-width:576px){
-
+@media(max-width:768px){
     .footer-wrapper {
         flex-direction: column;
-        gap: 35px;
+        gap: 30px;
     }
+    .footer-logo img {
+        width: 110px;
+    }
+}
 
+@media (max-width:576px){
+    .footer-logo img {
+        width: 100px;
+    }
     .end-footer h3 {
         font-size: 14px;
     }

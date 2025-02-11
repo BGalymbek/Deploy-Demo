@@ -89,6 +89,24 @@
 
 /* Media */
 
+@media (max-width:1000px){
+  .nav-list{
+    display: none;
+  }
+  .taulik-boiu span{
+    display: none;
+  }
+  .taulik-boiu::after {
+    content: "24/7";
+  }
+}
+
+@media(max-width: 768px){
+  .contact span{
+    display: none;
+  }
+}
+
 @media (max-width:576px){
   .nav-list{
     display: none;
@@ -98,11 +116,7 @@
     gap: 20px;
   }
 
-  .taulik-boiu span{
-    display: none;
-  }
   .taulik-boiu::after {
-    content: "24/7";
     font-size: 15px;
     /* display: inline; */
   }
@@ -112,8 +126,5 @@
 
   .nav-updated{
     width: 70%;
-  }
-  .contact span{
-    display: none;
   }
 }

@@ -8,8 +8,17 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const element = document.querySelector('.nav'); // Находим элемент внутри функции
+      const navListElement = document.querySelector('.nav-list');
+
+      if (window.innerWidth < 1250) {
+        navListElement.style.display = 'none';
+      } else {
+        navListElement.style.display = 'flex'; // или другой стиль, который вам нужен
+      }
+
       if (window.scrollY > 0) {
         element.classList.add("nav-updated")
+
       } else {
         element.classList.remove("nav-updated")
     }
